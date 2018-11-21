@@ -1,6 +1,10 @@
 h1 {
     font-size: 3rem;
 }
+/*FOR HEADER*/
+header{
+    margin-top: 55px !important;
+}
 
 /*NAVIGATION*/
 .bg-opacity {
