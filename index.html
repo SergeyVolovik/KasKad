@@ -282,18 +282,12 @@
 						<div class="container col-12 col-sm-5 p-5 bg-dark text-white text-center">
 							<div class="row justify-content-center">
 								<form action="">
-									<div class="col-12">
-										<label for="nameUser">Ваше Имя:</label>
-									</div>
-									<div class="col-12">
-										<input type="text" name="Name" id="nameUser" placeholder="Имя">
-									</div>
-									<div class="col-12">
-										<textarea name="Feedback" maxlength="1000" placeholder="Введите Ваш отзыв здесь..."></textarea>
-									</div>
-									<div class="col-12">
-										<a href="#" class="btn btn-outline-secondary m-2 m-sm-4">Оставить отзыв</a>
-									</div>
+									<div class="form-group mb-0">
+									    <h3>Оставьте отзыв</h3>
+									    <input name="name" type="text" class="form-control p-2 mb-2 w-100" id="formGroupExampleInput" placeholder="Имя">
+									    <textarea name="review" class="form-group p-2 w-100 mb-2" id="exampleFormControlTextarea1" placeholder="Комментарий" rows="3"></textarea>
+									    <button type="submit" name="sendfeed" class="btn btn-primary mb-2">Отправить</button>
+									 </div>
 								</form>
 							</div>
 						</div>
