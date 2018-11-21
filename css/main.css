@@ -1,0 +1,108 @@
+h1 {
+    font-size: 3rem;
+}
+
+/*NAVIGATION*/
+.bg-opacity {
+    background-color: rgba(52, 58, 64, 0.95);
+}
+
+.buttonOutLine {
+    outline: none !important;
+}
+
+/*ABOUT US*/
+.container_aboutUs {
+    height: 36rem;
+}
+
+.container_aboutUs p {
+    font-size: 1.1rem;
+    margin: 1.2rem;
+}
+
+/*ABOUT ROOMS*/
+.container_rooms {
+    height: 39rem;
+}
+
+.container_rooms p {
+    font-size: 1.1rem;
+    margin: 1.2rem;
+    text-align: justify;
+}
+
+/*ABOUT RESTAURANT*/
+.container_restaurant {
+    height: 36rem;
+}
+
+.container_restaurant p {
+    font-size: 1.1rem;
+    margin: 1.2rem;
+}
+
+/*GALLERY*/
+.container_fg {
+    height: 650px;
+}
+
+.container_gallery {
+    height: 745px;
+    margin: 75px 0 0 0;
+}
+
+/*ABOUT FEEDBACK*/
+.container_feedback {
+    height: 50rem;
+}
+
+/*STYLE FORM*/
+.container_send_reviews form label {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.container_send_reviews form input[type=text],
+input[type=email] {
+    width: 20rem;
+    padding: .3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: .3rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container_send_reviews form textarea {
+    width: 20rem;
+    padding: .3rem;
+    margin-bottom: 1rem;
+    height: 10rem;
+    white-space: normal;
+    border: 1px solid #ccc;
+    border-radius: .3rem;
+    text-align: left;
+    resize: none;
+    outline: none;
+}
+
+/*FOOTER*/
+footer {
+    height: 10rem;
+    margin-top: -10px !important;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 425px) {
+    .full-screen {
+        margin: 7rem 0 21rem 0;
+    }
+}
