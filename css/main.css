@@ -1,12 +1,11 @@
 h1 {
     font-size: 3rem;
 }
-/*FOR HEADER*/
-header{
-    margin-top: 55px !important;
-}
 
 /*NAVIGATION*/
+.block-hiegth{
+    height: 55px;
+}
 .bg-opacity {
     background-color: rgba(52, 58, 64, 0.95);
 }
@@ -107,6 +106,15 @@ footer p {
 /*MEDIA QUERIES*/
 @media screen and (max-width: 425px) {
     .full-screen {
-        margin: 7rem 0 21rem 0;
+        height: 95vh;
+        transition: .4s;
+        transition-timing-function: linear;
+    }
+    .h-slider{
+        height: 22rem;
+    }
+    .h-img{
+        text-align: center;
+        height: 22rem
     }
 }
