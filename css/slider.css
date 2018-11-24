@@ -8,7 +8,7 @@
 }
 .swiper-container {
   width: 79%;
-  height: 650px;
+  height: 93vh;
   float: left;
   -webkit-transition: opacity .6s ease, -webkit-transform .3s ease;
   transition: opacity .6s ease, -webkit-transform .3s ease;

@@ -97,7 +97,6 @@ h1 {
 
 .container_gallery {
     height: 745px;
-    margin: 75px 0 0 0;
 }
 
 /*ABOUT FEEDBACK*/
@@ -165,5 +164,20 @@ footer p {
         text-align: center;
         background-size: cover;
         background-position: center;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container_fg{
+        height: 53vh;
+    }
+
+    .container_gallery{
+    height: 53vh;    
+    }
+
+    .swiper-container{
+    width: 78%;
+    height: 53vh !important;
     }
 }
