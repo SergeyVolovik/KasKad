@@ -13,6 +13,9 @@
 		<link rel="stylesheet" href="css/slider.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	</head>
+		<!--Icons cdn-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<!--Icons cdn-->
 	<body data-spy="scroll" data-target=".navbar" data-offset="110">
 		<!-- NAVIGATION -->
 		<div id="main_page" class="container-fluid block-hiegth bg-dark"></div>
@@ -128,7 +131,7 @@
 						<h1>РЕСТОРАН</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fugiat ipsa, voluptas doloremque soluta! Quia maiores cumque blanditiis qui, eos. Possimus earum, corrupti. Quos accusamus dignissimos accusantium incidunt, doloremque laudantium.</p>
 						<a href="#" class="btn btn-outline-secondary m-2 m-sm-4">Скачать меню</a>
-						<a href="#" class="btn btn-outline-secondary m-2 m-sm-4">Заказать событие</a>
+						<a class="btn btn-outline-secondary m-2 m-sm-4" data-toggle="modal" data-target="#ModalBookRoom">Заказать событие</a>
 					</div>
 				</div>
 			</div>
@@ -299,6 +302,54 @@
 				</div>
 			</div>
 			<!-- /FORM -->
+
+			<!-- Modal -->
+			<div class="modal fade" id="ModalBookRoom" tabindex="-1" role="dialog" aria-labelledby="ModalBookRoom" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Заказ события</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<label for="nameclient">Как Вас зовут?</label>
+									<input type="text" class="form-control" id="nameclient" placeholder="Введите имя" required name="name">
+								</div>
+								<div class="form-group">
+									<label for="phone">Номер телефона</label>
+									<input type="text" class="form-control" id="phone" placeholder="+380" required name="phone">
+								</div>
+								<div class="form-group">
+									<label for="datein">Дата события</label>
+									<div role="wrapper" id="datein" class="gj-datepicker gj-datepicker-bootstrap gj-unselectable input-group">
+										<input type="text"name="datein" required="" id="datepickerout" class="w-90 form-control" placeholder="мм/дд/гггг" data-type="datepicker"  role="input">
+										<span class="input-group-append" role="right-icon">
+									<button class="btn btn-outline-secondary border-left-0" type="button">
+										<!--<i class="gj-icon">event</i>-->
+										<i class="far fa-calendar-alt"></i>
+									</button>
+								</span>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="comments">Расскажите подробнее</label>
+									<textarea class="form-control" id="comments" rows="3" placeholder="Описание"></textarea>
+								</div>
+								<div class="form-group text-center">
+									<button type="submit" class="btn btn-primary text-center btnmydes">Забронировать</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal -->
+
 			<!-- GOOGLE MAPS -->
 			<div id="locatation" class="jumbotron jumbotron-fluid mb-0 bg-white border border-0 p-0">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d886185.5285209762!2d24.9882996129804!3d49.477965581130185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1541765431569" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
