@@ -76,7 +76,7 @@ h1 {
 
 .container_rooms p {
     font-size: 1.1rem;
-    margin: 1.2rem;
+    margin: 5.2rem;
     text-align: justify;
 }
 
@@ -130,6 +130,17 @@ h1 {
     outline: none;
     background: transparent;
 }
+
+.container_send_reviews button{ 
+    background: #000;
+    border: none;
+    letter-spacing: .1rem;
+}
+
+.container_send_reviews button:hover{
+    background: #6c757d;
+}
+
 
 /*FOOTER*/
 footer {
