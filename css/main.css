@@ -94,12 +94,15 @@ h1 {
 }
 /*ABOUT US*/
 .container_aboutUs {
-    height: 36rem;
+    height: 100%;
+    padding: 8rem;
 }
 
 .container_aboutUs p {
     font-size: 1.1rem;
     margin: 1.2rem;
+    text-indent: 3rem;
+    line-height: 2.2rem;
 }
 
 /*ABOUT ROOMS*/
@@ -109,18 +112,48 @@ h1 {
 
 .container_rooms p {
     font-size: 1.1rem;
-    margin: 5.2rem;
+    margin: 2.2rem;
+    text-indent: 2.5rem;
+    line-height: 2.2rem;
     text-align: justify;
+}
+.container_rooms a{
+    display: inline-block;
+    color: #E7C492;
+    font-weight: 600;
+    text-decoration: none;
+    user-select: none;
+    padding: .6em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
 }
 
 /*ABOUT RESTAURANT*/
 .container_restaurant {
-    height: 36rem;
+    height: 100%;
+    padding: 5rem;
 }
 
 .container_restaurant p {
+    text-indent: 2.5rem;
+    line-height: 2.2rem;
     font-size: 1.1rem;
     margin: 1.2rem;
+}
+
+.container_restaurant a{
+    display: inline-block;
+    color: rgba(52, 58, 64, 0.95) !important;
+    font-weight: 600;
+    text-decoration: none;
+    user-select: none;
+    padding: .6em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
 }
 
 /*GALLERY*/
@@ -165,8 +198,17 @@ h1 {
 }
 
 .container_send_reviews button{ 
-    background: #000;
-    border: none;
+    background: none;
+    display: inline-block;
+    color: #E7C492;
+    font-weight: 600;
+    text-decoration: none;
+    user-select: none;
+    padding: .6em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
     letter-spacing: .1rem;
 }
 
@@ -192,7 +234,7 @@ footer a{
 }
 
 footer a:hover{
-    color: #fff;
+    color: #E7C492;
     text-decoration: none;
 }
 footer p {
@@ -203,10 +245,29 @@ footer p {
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 535px) {
-    .container_rooms p {
-        font-size: 1.1rem;
-        margin: 2.2rem;
+    .container_aboutUs{
+        padding: 1rem;
     }
+
+    .container_aboutUs p {
+        font-size: 1rem;
+        margin: 1rem;
+    }
+
+    .container_rooms p {
+        font-size: 1rem;
+        margin: 2rem;
+    }
+    .container_restaurant{
+        padding: 0;
+    }
+    .container_restaurant p {
+    text-indent: 2.5rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
     .full-screen {
         height: 95vh;
         transition: .4s;

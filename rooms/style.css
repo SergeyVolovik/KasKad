@@ -1,0 +1,13 @@
+.alert-button{
+	display: inline-block;
+	background: rgba(52, 58, 64, 0.95);
+    color: #fff !important;
+    font-weight: 600;
+    text-decoration: none;
+    user-select: none;
+    padding: .6em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+}
